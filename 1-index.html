@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Registro CIPP — Prototipo</title>
+<link rel="stylesheet" href="styles.css?v=4">
+</head>
+<body>
+<div id="gate">
+  <div class="gate-box">
+    <h1>Registro CIPP</h1>
+    <p class="gate-sub">Corporación de Innovación en Piso Pélvico</p>
+    <p class="gate-warn">PROTOTIPO EN PRUEBAS — SOLO DATOS FICTICIOS</p>
+    <form id="gate-form">
+      <input type="password" id="gate-pass" placeholder="Clave de acceso" autocomplete="current-password" autofocus>
+      <button type="submit">Ingresar</button>
+    </form>
+    <p id="gate-error" class="gate-error"></p>
+  </div>
+</div>
+<div id="app" class="hidden">
+  <header>
+    <div class="header-inner">
+      <h1>Registro CIPP</h1>
+      <span class="badge">PROTOTIPO — DATOS FICTICIOS</span>
+      <nav>
+        <button id="nav-home" class="nav-btn">Inicio</button>
+        <button id="nav-export" class="nav-btn">Exportar</button>
+        <button id="nav-import" class="nav-btn">Importar</button>
+        <button id="nav-lock" class="nav-btn">Bloquear</button>
+      </nav>
+    </div>
+  </header>
+  <main id="main"></main>
+  <footer>Réplica funcional del registro REDCap CIPP (PID 27) — estructura idéntica, sin datos reales de pacientes.</footer>
+</div>
+<input type="file" id="import-file" accept=".json" class="hidden">
+<script src="dictionary.js?v=4"></script>
+<script src="app.js?v=4"></script>
+</body>
+</html>
