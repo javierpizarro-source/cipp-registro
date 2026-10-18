@@ -6,10 +6,12 @@ Réplica funcional del registro REDCap del CIPP (Corporación de Innovación en 
 
 Sitio: https://javierpizarro-source.github.io/cipp-registro/ (acceso con clave).
 
-Piloto "ruta Bulkamid": instrumentos PACIENTE, CONSULTA, CISTOMETRÍA SIMPLE y CIRUGÍA/PROCEDIMIENTO, generados desde el codebook REDCap con sus tipos de campo, opciones, validaciones, lógica de salto, campos calculados y campos requeridos.
+Los 21 instrumentos del proyecto (1.941 campos), agrupados por sus 9 eventos, generados desde el codebook REDCap con tipos de campo, opciones, validaciones, lógica de salto (1.440 reglas), campos calculados, campos requeridos y referencias cruzadas entre eventos.
 
-- `dictionary.js` — diccionario de datos (editar aquí para modificar campos)
-- `app.js` — motor de formularios (renderiza el diccionario, evalúa lógica y cálculos, guarda en el navegador)
+- `dictionary.js` — diccionario de datos (editar aquí para modificar campos). Región/comuna: lista oficial de 16 regiones y 342 comunas (fuente: juanbrujo/chile-regiones-comunas). Operadores/cirujanos: autocompletado editable.
+- `app.js` — motor de formularios (renderiza el diccionario, evalúa lógica y cálculos, guarda en el navegador).
 - Exportación CSV por instrumento y respaldo/importación JSON.
+
+Tras editar archivos, subir el número `?v=N` de los assets en `index.html` para saltar el caché de GitHub Pages (~10 min).
 
 Fases siguientes (pendientes de aprobación): backend privado para datos reales y migración desde REDCap.
